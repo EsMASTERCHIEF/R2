@@ -84,26 +84,26 @@ if st.button('Predict'):
 
     input_data = pd.DataFrame(
         {
-            'battery_power': {battery_power}, 
-            'blue': {blue},
-            'clock_speed': {clock_speed},
-            'dual_sim': {dual_sim},
-            'fc': {fc},
-            'four_g': {four_g},
-            'int_memory': {int_memory},
-            'm_dep': {m_dep},
-            'mobile_wt': {mobile_wt},
-            'n_cores': {n_cores},
-            'pc': {pc},
-            'px_height': {px_height},
-            'px_width': {px_width},
-            'ram': {ram},
-            'sc_h': {sc_h},
-            'sc_w': {sc_w},
-            'talk_time': {talk_time},
-            'three_g': {three_g},
-            'touch_screen': {touch_screen},
-            'wifi': {wifi}
+            'battery_power': [battery_power], 
+            'blue': [blue],
+            'clock_speed': [clock_speed],
+            'dual_sim': [dual_sim],
+            'fc': [fc],
+            'four_g': [four_g],
+            'int_memory': [int_memory],
+            'm_dep': [m_dep],
+            'mobile_wt': [mobile_wt],
+            'n_cores': [n_cores],
+            'pc': [pc],
+            'px_height': [px_height],
+            'px_width': [px_width],
+            'ram': [ram],
+            'sc_h': [sc_h],
+            'sc_w': [sc_w],
+            'talk_time': [talk_time],
+            'three_g': [three_g],
+            'touch_screen': [touch_screen],
+            'wifi': [wifi]
         }
     )
     st.dataframe(input_data)
