@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-pipeline_path = "/workspaces/R2/artefacts/preprocessor/preprocessor.pkl"
-model_path = "/workspaces/R2/artefacts/model/svc.pkl"
+pipeline_path = "artefacts/preprocessor/preprocessor.pkl"
+model_path = "artefacts/model/svc.pkl"
 encoder_path = "/workspaces/R2/artefacts/preprocessor/labelencoder.pkl"
 with open(pipeline_path, 'rb') as file1:
     print(file1.read(100))
