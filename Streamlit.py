@@ -18,7 +18,7 @@ with open(pipeline_path, 'rb') as file1:
         print(file1.read(100))
 
     try:
-        SVC = joblib.load(model_path)
+        model = joblib.load(model_path)
         print('SVC cargada')
     except Exception as e:
         print(f'Error cargando el SVC {e}')
